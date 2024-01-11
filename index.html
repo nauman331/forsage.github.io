@@ -12,7 +12,7 @@
 
 <body class="bg-gray-900 overflow-x-hiddens w-screen">
     <!--Top Navbar for mobile sir-->
-    <nav class="p-2 bg-blue-600 w-[100%] shadow block md:hidden">
+    <nav class="p-2 bg-blue-600 w-screen shadow block md:hidden">
         <div class="flex justify-between items-center text-white">
 
             <span class="flex font-bold text-lg"> <svg class="block mr-2.5" width="45" height="30" fill="none">
@@ -282,10 +282,10 @@
     <div class="flex items-center justify-evenly flex-wrap md:pl-80 mt-5">
         <div class="text-white w-[400px] flex items-center">
             <div
-                class="bg-gray-700 w-36 h-36 flex items-center justify-center rounded-full border-4 border-l-purple-600 border-b-purple-600 border-r-blue-600 border-t-blue-600">
+                class="bg-gray-700 z-[-2] md:w-36 w-32 h-32 md:h-36 flex items-center justify-center rounded-full border-4 border-l-purple-600 border-b-purple-600 border-r-blue-600 border-t-blue-600">
                 <img src="UnknownUser.webp" alt="..." class="w-full h-full rounded-full" />
                 <div
-                    class="flex justify-center items-center w-10 relative h-10 sm:w-7.5 sm:h-7.5 bg-status-gold rounded-full w-[36px] h-[36px] z-10 absolute right-0  bottom-2.5 ">
+                    class="flex z-[-1] justify-center items-center w-10 relative h-10 sm:w-7.5 sm:h-7.5 bg-status-gold rounded-full w-[36px] h-[36px] z-10 absolute right-0  bottom-2.5 ">
                     <span class="absolute -bottom-12 right-0 bg-yellow-500 rounded-full px-1 py-2">
                         <svg class="h-5 sm:h-3.5 text-gray " fill="black" viewBox="0 0 21 14"
                             xmlns="http://www.w3.org/2000/svg">
@@ -310,9 +310,9 @@
                 </span>
             </div>
         </div>
-        <div class="text-white w-[400px]">
+        <div class="text-white md:w-[400px] w-[300px] flex flex-col justify-center items-center mt-2">
             <div class="
-            h-24  w-[400px] h-full bg-blue-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-lg
+            h-24  md:w-[400px] w-[350px] h-full bg-blue-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-lg
             ">
                 <p class="m-3 text-sm mt-3">Personal link <span title="Reffer your freind"
                         class=" cursor-pointer">?</span>
@@ -326,7 +326,7 @@
                 </div>
             </div>
             <div style="background-image: url(frgx.webp);"
-                class="h-[10vh] w-full bg-cover rounded-lg flex items-center mt-3 justify-end gap-3 mt-5">
+                class="h-[10vh] md:w-[400px] w-[350px] bg-cover rounded-lg flex items-center mt-3 justify-end gap-3 mt-5">
                 <h1 class="font-bold">FRGX Token</h1>
                 <button
                     class="bg-black text-white border-2 border-l-green-600 border-t-green-600 border-b-pink-600 border-r-pink-600 py-2 px-6 rounded-full text-sm">Login
@@ -336,10 +336,10 @@
         </div>
     </div>
     <div class="flex flex-wrap flex-row-reverse justify-center gap-2 md:pl-72">
-        <div class="w-[420px] h-[20vh] bg-gray-700 mt-5 rounded-lg items-start p-2 justify-start flex flex-col bg-cover"
+        <div class="md:w-[420px] w-[350px] h-[20vh] bg-gray-800 mt-5 rounded-lg items-start p-2 justify-start flex flex-col bg-cover"
             style="background-image: url(bnbBusd.png);">
-            <p class="text-black ">Profits</p>
-            <span class="flex items-center justify-between w-full rounded-full mt-5">
+            <p class="text-gray-300">Profits</p>
+            <span class=" flex items-center justify-between w-full rounded-full mt-5">
                 <h1 class="text-white font-extrabold text-lg">1115631.6 BUSD</h1>
                 <p class="text-green-400 ml-2">8</p>
             </span>
@@ -348,30 +348,33 @@
                 <p class="text-green-400 ml-2">0.0178</p>
             </span>
         </div>
-        <div class="w-[120px] h-[20vh] bg-gray-700 mt-5 rounded-lg items-start p-2 justify-start flex flex-col">
-            <p class="text-black ">Ratio</p>
-            <h1 class="text-white font-bold">2652%</h1>
+        <div style="background-image: url(bnbBusd.png);"
+            class="w-[110px] bg-cover h-[17vh] md:h-[20vh] md:w-[120px] bg-gray-800 mt-5 rounded-lg items-start p-2 justify-start flex flex-col">
+            <p class="text-gray-300">Ratio</p>
+            <h1 class=" text-white font-bold">2652%</h1>
             <span class="bg-gray-500  flex items-center justify-between w-[100px] h-[5vh] rounded-full mt-5">
-                <p class="text-green-400 ml-2">8</p>
+                <p class="text-white ml-2">0%</p>
                 <img src="activity_white.webp" alt="'..." class="h-6 w-6 mr-2" />
             </span>
         </div>
 
-        <div class="w-[120px] h-[20vh] bg-gray-700 mt-5 rounded-lg items-start p-2 justify-start flex flex-col">
-            <p class="text-black ">Team</p>
-            <h1 class="text-white font-bold">1643144</h1>
+        <div class="w-[110px] h-[17vh] md:h-[20vh] md:w-[120px] bg-gray-800 mt-5 rounded-lg items-start p-2 justify-start flex flex-col bg-cover"
+            style="background-image: url(2.png);">
+            <p class="text-gray-300">Team</p>
+            <h1 class=" text-white font-bold">1643144</h1>
             <span
-                class="bg-green-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-between w-[100px] h-[5vh] rounded-full mt-5">
+                class="bg-green-900 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-between w-[100px] h-[5vh] rounded-full mt-5">
                 <p class="text-green-400 ml-2">8</p>
                 <img src="activity_green.png" alt="'..." class="h-6 w-6 mr-2" />
             </span>
         </div>
 
-        <div class="w-[120px] h-[20vh] bg-gray-700 mt-5 rounded-lg items-start p-2 justify-start flex flex-col">
-            <p class="text-black ">Partners</p>
-            <h1 class="text-white font-bold">22127</h1>
+        <div class="w-[110px] h-[17vh] md:h-[20vh] md:w-[120px] bg-gray-800 mt-5 rounded-lg items-start p-2 justify-start flex flex-col bg-cover"
+            style="background-image: url(1.png);">
+            <p class="text-gray-300">Partners</p>
+            <h1 class=" text-white font-bold">22127</h1>
             <span
-                class="bg-green-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-between w-[100px] h-[5vh] rounded-full mt-5">
+                class="bg-green-900 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-between w-[100px] h-[5vh] rounded-full mt-5">
                 <p class="text-green-400 ml-2">8</p>
                 <img src="activity_green.png" alt="'..." class="h-6 w-6 mr-2" />
             </span>
@@ -380,7 +383,7 @@
 
 
         <div
-            class="w-[80%] rounded m-5 md:h-[20vh] h-[15vh] bg-gray-700 flex flex-wrap items-center justify-evenly gap-2">
+            class="w-[80%] rounded m-5 md:h-[20vh] h-[15vh] bg-gray-800 flex flex-wrap items-center justify-evenly gap-2">
             <img src="cup.svg" alt="'..." class="md:h-32 md:w-32 h-16 w-16" />
             <img src="cup.svg" alt="'..." class="md:h-32 md:w-32  h-16 w-16" />
             <img src="cup.svg" alt="'..." class="md:h-32 md:w-32  h-16 w-16" />
